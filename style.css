@@ -47,15 +47,6 @@ main {
     scale: 1.03;
 }
 
-#titles {
-    background-color: #eddfde;
-    height: 4rem;
-    width: 100%;
-    align-items: center;
-    display: flex;
-
-}
-
 .technologies {
     display: flex;
     align-items: baseline;
@@ -66,52 +57,24 @@ main {
     line-height: 2rem;
 }
 
-/* marquee {
-    width: 7rem;
-
-} */
-
-/* 
-#title {
-
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-    -moz-animation: scroll-right 2s linear infinite;
-    -webkit-animation: scroll-right 2s linear infinite;
-    animation: scroll-right 20s linear infinite;
+#titles {
+    background-color: #eddfde;
+    height: 4rem;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    /* transition: all 30s linear; */
+    animation: gapping 2s linear 0s infinite normal;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
 
-@-moz-keyframes scroll-right {
+@keyframes gapping {
     0% {
-        -moz-transform: translateX(-100%);
+        gap: 0rem;
+
     }
 
     100% {
-        -moz-transform: translateX(100%);
+        gap: 10rem;
     }
 }
-
-@-webkit-keyframes scroll-right {
-    0% {
-        -webkit-transform: translateX(-100%);
-    }
-
-    100% {
-        -webkit-transform: translateX(100%);
-    }
-}
-
-@keyframes scroll-right {
-    0% {
-        -moz-transform: translateX(-100%);
-        -webkit-transform: translateX(-100%);
-        transform: translateX(-100%);
-    }
-
-    100% {
-        -moz-transform: translateX(100%);
-        -webkit-transform: translateX(100%);
-        transform: translateX(100%);
-    }
-} */
